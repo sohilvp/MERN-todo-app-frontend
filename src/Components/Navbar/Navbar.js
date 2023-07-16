@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
-import "./navbar.css";
-// import axios from '../../hooks/useAxiosPrivate'
-import { AuthUser } from "../../context/AuthContext";
-import axios  from "../../api/axios";
+import React, { useContext } from "react"
+import { NavLink, useNavigate } from "react-router-dom"
+import "./navbar.css"
+import { AuthUser } from "../../context/AuthContext"
+import axios  from "../../api/axios"
+
 const Navbar = () => {
+  
   const { auth,setAuth } = useContext(AuthUser);
   const navigate =useNavigate()
 
@@ -18,9 +19,6 @@ const Navbar = () => {
       }
       
    }
-
-
-
 
   return (
     <div className="nav_container container">
@@ -56,4 +54,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar

@@ -7,19 +7,15 @@ import PersistLogin from "./Components/PersistLogin/PersistLogin";
 import UserConsole from "./Components/UserConsole/UserConsole";
 import Home from "./Components/Home/Home";
 import Error from "./Components/Error/Error";
-import { AuthUser } from "./context/AuthContext";
-// import './App.css';
 
 function App() {
-  const { auth } = useContext(AuthUser);
+  
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        
         <Route path="/login" element={<Login />} />
-       <Route path="/home" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/register" element={<Register />} />
-
         <Route element={<PersistLogin />}>
           <Route path="/" element={<UserConsole />} />
         </Route>

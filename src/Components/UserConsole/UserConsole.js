@@ -9,13 +9,13 @@ import { AuthUser } from "../../context/AuthContext";
 
 
 const UserConsole = () => {
- const {auth} = useContext(AuthUser)
+
+  const {auth} = useContext(AuthUser)
   const axiosPrivate =useAxiosPrivate()
   const [todos,setTodos] =useState([])
   const [input,setInput]=useState('')
   const [isLoad,setIsLoad]=useState(false)
-
-const [newtodo,setNewtodo]  = useState('')
+  const [newtodo,setNewtodo]  = useState('')
   const navigate = useNavigate()
 
 
@@ -35,45 +35,40 @@ const [newtodo,setNewtodo]  = useState('')
   const handleDelete =async(e,id)=>{
     
     e.preventDefault()
-    
       const response = await axiosPrivate.delete(`post/${id}`,{withCredentials:true})
       const done = response?.data?.message
       setNewtodo(done)
-      
     
   }
   
   useEffect(()=>{
     let isMounted = true;
-    
     const fetchTodos =async()=>{
+
       try {
         
         const response = await axiosPrivate.get(`/post/${auth.id}`)
-       const data =response?.data
+        const data =response?.data
         isMounted && setTodos(data.todos)
         setIsLoad(false)
         
         
       } catch (error) {
+
         console.log(error.response.data.error)
         if(error.response?.status === 403){
-
           navigate('/login')
         }
         
       }
     }
-    // if (auth.id) {
-    // }
+    
     fetchTodos();
   
     return () => {
-      isMounted = false;
-      setNewtodo('')
-      
-     
-  }
+      isMounted = false
+      setNewtodo('')    
+    }
   },[newtodo])
 
   
@@ -91,7 +86,6 @@ const [newtodo,setNewtodo]  = useState('')
             type="submit"
             name="password"
             id="password"
-            // className="btn_add"
             className={isLoad?"btn_add  disable":"btn_add"}
           >
             Add

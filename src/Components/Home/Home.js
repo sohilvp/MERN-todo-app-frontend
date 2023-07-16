@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from "react";
-import cover from "../../assets/coverimg.png";
-import { BsCircleSquare } from "react-icons/bs";
-import "./home.css";
-import { Link } from "react-router-dom";
-const Home = () => {
-  
+import React from "react"
+import cover from "../../assets/coverimg.png"
+import { BsCircleSquare } from "react-icons/bs"
+import { Link } from "react-router-dom"
+import "./home.css"
 
-  
+
+
+const Home = () => {
+    
   return (
     
     <div className="home_container">
@@ -28,6 +29,6 @@ const Home = () => {
       </div>
     </div>
   )
-};
+}
 
-export default Home;
+export default Home

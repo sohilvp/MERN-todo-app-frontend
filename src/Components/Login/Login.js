@@ -1,12 +1,16 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState } from "react"
 import axios from '../../api/axios'
-import "./login.css";
+import "./login.css"
 import { useNavigate} from 'react-router-dom' 
-import { AuthUser } from "../../context/AuthContext";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { AuthUser } from "../../context/AuthContext"
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
+
+
 const Login = () => {
-const {setAuth } = useContext(AuthUser)
+
+  const {setAuth } = useContext(AuthUser)
   const [inputs,setInputs] =useState({email:'',password:''})
   const navigate = useNavigate() 
 
@@ -15,14 +19,14 @@ const {setAuth } = useContext(AuthUser)
       ...prev,[e.target.name]:e.target.value
     }))
   }
+
   const handleLoginSubmit =async(e)=>{
       e.preventDefault()
       try {
         const response = await axios.post('/auth',{email:inputs.email,password:inputs.password},{headers: { 'Content-Type': 'application/json' },withCredentials:true})
-     const accessToken =response?.data?.accessToken
-    
-     const name =response?.data?.user?.username
-     const id =response?.data?.user?._id
+        const accessToken =response?.data?.accessToken
+        const name =response?.data?.user?.username
+        const id =response?.data?.user?._id
         setAuth({id,name,accessToken})
         navigate('/')
       } catch (error) {
@@ -55,7 +59,7 @@ const {setAuth } = useContext(AuthUser)
         
       </form>
     </div>
-  );
-};
+  )
+}
 
-export default Login;
+export default Login

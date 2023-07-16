@@ -4,28 +4,34 @@ import { useNavigate } from "react-router-dom";
 import axios from "../../api/axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
+
 const Register = () => {
   const [inputs,setInputs] =useState({username:'',email:'',password:''})
-const navigate =useNavigate()
+  const navigate =useNavigate()
   const handleChange =(e)=>{
     setInputs(prev=>({
       ...prev,[e.target.name]:e.target.value
     }))
   }
   const handleRegister =async(e)=>{
-e.preventDefault()
-try {
-  const response  = await axios.post('/register',{username:inputs.username,email:inputs.email,password:inputs.password})
-  if(response.status === 201){
-    toast.success('Successfully registered')
-    setInputs({username:'',email:'',password:''})
-    setTimeout(()=>{
-      navigate('/login')
-    },1000)
+  e.preventDefault()
+
+
+  try {
+    const response  = await axios.post('/register',{username:inputs.username,email:inputs.email,password:inputs.password})
+    if(response.status === 201){
+      toast.success('Successfully registered')
+      setInputs({username:'',email:'',password:''})
+      setTimeout(()=>{
+        navigate('/login')
+      },1000)
     
   }
 
+
 } catch (error) {
+
   if(error.response){
     toast.error(error?.response?.data?.error)
   }

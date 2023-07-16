@@ -3,8 +3,9 @@ import {Outlet} from 'react-router-dom'
 import useRefesh from '../../hooks/useRefresh'
 import { AuthUser } from '../../context/AuthContext'
 import { useNavigate } from 'react-router-dom'
-
 import   Loader from '../Loader/Loader'
+
+
 const PersistLogin = () => {
   const refresh = useRefesh()
   const {auth} = useContext(AuthUser)
@@ -13,7 +14,6 @@ const PersistLogin = () => {
 
   useEffect(()=>{
     let isMounted = true
-
     const verifyRefreshToken =async()=>{
       try {
         await refresh()
