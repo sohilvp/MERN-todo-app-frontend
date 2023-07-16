@@ -1,0 +1,27 @@
+.todo_container {
+  max-width: 80%;
+  margin: 0 auto;
+  min-height: 100px;
+  overflow: hidden;
+  
+}
+.single_todo {
+  position: relative;
+  background: #c3edc0;
+  border-radius: 10px;
+}
+.options{
+  position: absolute;
+  right: .5em;
+  top: .5em;
+  display: flex;
+  gap: .8em;
+}
+.todo_text{
+  padding-top: 1.2em;
+  padding-left: 1em;
+  
+}
+.todo_text p::first-letter{
+  text-transform: uppercase;
+}

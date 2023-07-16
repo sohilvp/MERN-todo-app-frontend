@@ -1,0 +1,29 @@
+.nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 0;
+  font-weight: 500;
+}
+.nav_links ul {
+  display: flex;
+  align-items: center;
+}
+.nav_links ul li {
+  display: inline-block;
+  padding-left: 1em;
+  font-size: 1.2rem;
+  font-family: 'Belanosima', sans-serif;
+}
+
+.logo{
+  font-family: 'Belanosima', sans-serif;
+  font-size: 1.8rem;
+}
+
+
+
+@media only screen 
+  and (max-width: 1024px) {
+  
+}

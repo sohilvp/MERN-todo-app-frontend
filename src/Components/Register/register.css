@@ -1,0 +1,35 @@
+.register_container {
+  margin-top: 8em;
+}
+.register_container .form_container {
+  display: flex;
+  flex-direction: column;
+  /* background: #000; */
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.register_container .form_container input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+
+  outline: none;
+  font-size: 1.1rem;
+}
+.register_container .form_container .input_div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+.register_container .form_container label {
+  margin-bottom: 0.5em;
+}
+
+.btn_register {
+  width: 200px;
+  padding: 1em 3em;
+  margin: 0 auto;
+  background: transparent;
+  cursor: pointer;
+}
