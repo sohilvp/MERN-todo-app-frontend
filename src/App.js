@@ -1,4 +1,4 @@
-import { useContext } from "react";
+
 import { Routes, Route } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 import Login from "./Components/Login/Login";
@@ -12,7 +12,7 @@ function App() {
   
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route  element={<Layout />}>
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/register" element={<Register />} />
