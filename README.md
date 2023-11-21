@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+## Live site : https://my-todo-listz.onrender.com/
+ ## ⚠⚠ Known Issue ⚠⚠
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+⚠Initial Request Delay: Due to the server restart on Render.com, the initial request may take a bit longer. Subsequent requests will perform optimally.⚠
+--------------------------------------------------------------------------
+-> Developed a full-stack MERN (MongoDB, Express.js, React.js, Node.js) application
+with comprehensive functionalities and seamless user experience. <br>
+-> Ensured the protection of sensitive user data by storing it in the application’s state
+with appropriate encryption and data handling practices.<br>
+-> Utilized JWT (JSON Web Tokens) for secure access and implemented token
+rotation for enhanced security.<br>
+-> Employed a ”Persist Login” feature to maintain user sessions and provide a
+seamless experience across multiple visits to the application.<br>
+-> Implemented robust security measures, including cross-site attack protection, to
+ensure the application’s integrity and safeguard user data.<br>
+-> Designed a responsive website, ensuring seamless access and optimal user
+interface across various devices and screen sizes.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screenshot 2023-11-21 210313](https://github.com/sohilvp/MERN-todo-app-frontend/assets/128142808/82acc323-4574-44e7-9462-81ea9564bb5e)
+![Screenshot 2023-11-21 210755](https://github.com/sohilvp/MERN-todo-app-frontend/assets/128142808/fa111ffb-8ead-494a-84b8-99e0e1b56c86)
+![Screenshot 2023-11-21 210351](https://github.com/sohilvp/MERN-todo-app-frontend/assets/128142808/58d81b69-90e5-419b-b13a-4a57f5a8564c)
+![Screenshot 2023-11-21 210428](https://github.com/sohilvp/MERN-todo-app-frontend/assets/128142808/661f0ca3-e837-4070-9ce6-ed9c3928b19b)
